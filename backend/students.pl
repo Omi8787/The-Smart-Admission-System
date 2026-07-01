@@ -1,0 +1,10 @@
+student('S1', 85, obc).
+student('S2', 70, open).
+student('S3', 73, sc).
+student('S4', 62, sc).
+student('S5', 79, st).
+student('S6', 79, open).
+student('S7', 76, open).
+student('S9', 89, open).
+student('S8', 76, sc).
+student('S9', 89, open).

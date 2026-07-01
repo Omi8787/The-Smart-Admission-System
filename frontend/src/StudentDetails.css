@@ -1,0 +1,85 @@
+.form-container {
+  max-width: 1400px;
+  width: 60%; 
+  margin: 40px auto;
+  padding: 30px;
+  background: #b19d9d;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(237, 233, 233, 0.1);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #060f38;
+}
+
+/* Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+
+}
+
+.gender {
+  width: 530px;
+}
+.branch {
+  width: 530px;
+}
+/* Inputs */
+input, select, textarea {
+  padding: 12px;
+  font-size: 14px;
+  color: aliceblue;
+  width: 100%;
+  border: 1px solid #140101;
+  border-radius: 8px;
+  background: #1d1c1e;
+  transition: all 0.2s ease;
+}
+input::placeholder,textarea::placeholder {
+    color: #dad1e3;
+}
+
+/* Focus effect (interactive part) */
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  background: #1d1c1e;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Textarea full width */
+textarea {
+  grid-column: span 2;
+  min-height: 80px;
+}
+
+/* Button */
+.submit-btn {
+  grid-column: span 2;
+  padding: 14px;
+  background: linear-gradient(to right, #3f5368, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.submit-btn:hover {
+  background: linear-gradient(to right, #0056b3, #003f7f);
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
